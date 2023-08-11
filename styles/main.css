@@ -13,6 +13,7 @@ body {
 
 main {
   width: 90%;
+  padding-bottom: 50px;
 }
 
 a {
@@ -29,4 +30,17 @@ li {
 
 .greyText {
   color: #aaa;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery img {
+  border: 5px solid #aaa;
+  border-radius: 10px;
+  height: 700px;
+  margin-bottom: 20px;
 }
