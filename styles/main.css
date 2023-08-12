@@ -9,3 +9,44 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+b {
+  color: #17174f;
+}
+
+#idSelect {
+  color: #0360eb;
+}
+
+.orangeText {
+  color: orange;
+}
+
+.orangeText.boldText {
+  color: orangered;
+  font-weight: bolder;
+}
+
+b i {
+  color: aqua;
+}
+
+b > u {
+  color: brown;
+}
+
+i + u {
+  color: aquamarine;
+}
+
+b ~ u {
+  color: darkmagenta;
+}
+
+[href] {
+  color: hotpink;
+}
+
+[href="#"] {
+  color: firebrick;
+}
