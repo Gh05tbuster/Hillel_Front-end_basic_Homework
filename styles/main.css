@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 30px;
+  background-color: #333;
+  color: #ddd;
 }
 
 body {
@@ -10,8 +13,16 @@ body {
   align-items: center;
 }
 
+main {
+  width: 60%;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
 b {
-  color: #17174f;
+  color: #36a525;
 }
 
 #idSelect {
@@ -32,14 +43,14 @@ b i {
 }
 
 b > u {
-  color: brown;
+  color: rgb(75, 98, 135);
 }
 
-i + u {
-  color: aquamarine;
+i + b {
+  color: rgb(231, 247, 0);
 }
 
-b ~ u {
+u ~ i {
   color: darkmagenta;
 }
 
