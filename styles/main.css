@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background-color: #e9e9e9;
+  background-color: #efefef;
 }
 
 main {
@@ -26,26 +26,47 @@ main {
 .cardBoard {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 
-  width: 60%;
+  width: 65%;
 }
 
 .card {
   width: 200px;
   height: 226px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 30%;
-  margin: 10px;
+  text-align: center;
+  margin: 15px;
   background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 10px rgba(150, 150, 150, 0.5);
+}
+
+.card:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 10px 10px rgba(150, 150, 150, 0.5);
 }
 
 .card img {
+  margin-top: 5px;
   height: 130px;
-  border: 1px solid #c4c4c4;
+  width: 130px;
+}
+
+.card h2 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 3px;
 }
