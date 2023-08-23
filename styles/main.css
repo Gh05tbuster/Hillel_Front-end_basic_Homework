@@ -38,4 +38,66 @@ a {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cover {
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: #4d1801;
+  color: #2b0f02;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 25px 10px #666;
+}
+
+.cover.front {
+  height: 550px;
+  width: 400px;
+  padding-left: 0;
+}
+
+.cover.back {
+  height: 400px;
+  width: 550px;
+  padding-top: 0;
+}
+
+.stitch {
+  border: 5px dashed #6a2102;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.stitch.front {
+  border-left: none;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.stitch.back {
+  border-top: none;
+  align-items: end;
+  justify-content: start;
+  padding: 20px;
+}
+
+.trident {
+  height: 220px;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
 }
