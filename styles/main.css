@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #fff;
+  --bg-color: #fff9e8;
   --color: #000;
   --brd-rad: 10px;
 }
@@ -43,6 +43,8 @@ a {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
   position: relative;
 
   display: flex;
@@ -52,14 +54,11 @@ a {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: var(--bg-color);
-}
-
-/* -------------------------------------- */
-
-.calendar {
   border: 3px solid var(--color);
   border-radius: var(--brd-rad);
 }
+
+/* -------------------------------------- */
 
 .calendarTitle {
   font-size: 24px;
@@ -122,10 +121,6 @@ a {
 .monthName {
   font-size: 20px;
   font-weight: 700;
-}
-
-.calendar {
-  background-color: #fc575799;
 }
 
 .winter {
