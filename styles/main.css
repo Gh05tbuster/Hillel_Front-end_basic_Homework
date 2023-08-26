@@ -1,11 +1,11 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --basic-color: #999;
-  --secondary-color: #ccc;
-  --basic-background: #666;
-  --secondary-background: #333;
-  --text-color: #fff;
+  --basic-color: #34547a;
+  --secondary-color: #fff;
+  --basic-background: #eeeff1;
+  --secondary-background: #f9f9f9;
+  --text-color: #727272;
   --text-size: 16px;
 }
 
@@ -18,7 +18,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: var(--text-size);
-  line-height: 1.5;
+  line-height: 1.64;
   font-weight: 400;
   color: var(--text-color);
 }
@@ -33,6 +33,32 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .hidden {
   display: none !important;
 }
@@ -42,7 +68,7 @@ a {
 }
 
 .container {
-  width: 100%;
+  width: 1110px;
   max-width: calc(var(--container-width) +var(--basic-space) * 2);
   margin-left: auto;
   margin-right: auto;
@@ -52,3 +78,64 @@ a {
 }
 
 /* ------------------------------------ */
+
+.greySection {
+  background-color: var(--basic-background);
+}
+
+.headerNavbar {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerNavbar a {
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1.6px;
+}
+
+.headerNavbar a:hover {
+  color: var(--basic-color);
+}
+
+a.activePage {
+  font-weight: 500;
+  color: var(--basic-color);
+}
+
+.text {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 14/4;
+  text-transform: uppercase;
+}
+
+.basicButton {
+  margin-bottom: 75px;
+  width: 25%;
+  font-weight: 400;
+  background-color: var(--basic-color);
+  color: var(--secondary-color);
+  letter-spacing: 1.6px;
+  /* padding-top: calc(var(--basic-space) * 1.5); */
+}
+
+.basicButton:hover {
+  border: 3px solid var(--basic-color);
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+}
