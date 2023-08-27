@@ -179,6 +179,10 @@ a.activePage {
   color: var(--secondary-color);
 }
 
+.accentSection h3 {
+  color: var(--secondary-color);
+}
+
 .achieves {
   display: flex;
   flex-direction: row;
@@ -201,7 +205,6 @@ a.activePage {
 }
 
 .advertCard h3 {
-  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
@@ -225,7 +228,6 @@ a.activePage {
 }
 
 .footerSection h3 {
-  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
