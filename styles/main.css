@@ -33,6 +33,13 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
 .hidden {
   display: none !important;
 }
