@@ -1,12 +1,12 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --basic-color: #999;
-  --secondary-color: #ccc;
-  --basic-background: #666;
-  --secondary-background: #333;
+  --basic-color: #153416;
+  --secondary-color: #929191;
+  --basic-background: #e9e9e940;
+  --secondary-background: #16151580;
   --text-color: #fff;
-  --text-size: 16px;
+  --text-size: 12px;
 }
 
 * {
@@ -21,6 +21,15 @@ html {
   line-height: 1.5;
   font-weight: 400;
   color: var(--text-color);
+}
+
+body {
+  background-color: var(--secondary-background);
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 }
 
 img {
@@ -38,6 +47,7 @@ textarea,
 button,
 select {
   font: inherit;
+  color: inherit;
 }
 
 .hidden {
@@ -49,13 +59,165 @@ select {
 }
 
 .container {
-  width: 100%;
+  width: 70%;
   max-width: calc(var(--container-width) +var(--basic-space) * 2);
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
   position: relative;
 }
 
 /* ------------------------------------ */
+
+.sideBar {
+  background-color: var(--basic-background);
+  backdrop-filter: blur(5px);
+  width: 40%;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 40%;
+  float: right;
+  min-width: 400px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.switch {
+  width: 100%;
+  border: 2px solid var(--basic-color);
+  padding: 2px;
+  text-align: center;
+}
+
+.switchPos {
+  width: calc(50% - 2px);
+  padding: 10px;
+}
+
+.selected {
+  background-color: var(--basic-color);
+}
+
+.rounded {
+  border-radius: 30px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.textInput {
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.secondaryBG {
+  background-color: var(--secondary-color);
+}
+
+::placeholder {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+#password {
+  margin-bottom: 20px;
+}
+
+.extraOptions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.hiddenCheckbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.checkboxRestyle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--text-color);
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.hiddenCheckbox:checked ~ .checkboxRestyle {
+  border: 2px solid var(--basic-color);
+  background-color: var(--basic-color);
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.basicTextColor {
+  color: var(--basic-color);
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.btn {
+  text-align: center;
+  min-width: 100px;
+  min-height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border: 2px solid var(--basic-color);
+}
+
+.bigBtn {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.basicBG {
+  background-color: var(--basic-color);
+}
+
+.btn.basicBG:hover {
+  background-color: transparent;
+}
+
+.regPrompt {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.regPrompt .basicTextColor {
+  margin-right: 15px;
+}
+
+.loginPrompt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
