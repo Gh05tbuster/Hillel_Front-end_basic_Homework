@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Sign-up</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="fL sideBar unselectable">
+            <div class="container">
+                <div class="switch rounded">
+                    <a href="index.html">
+                        <div class="switchPos rounded inlineBlock">Log in</div>
+                    </a>
+                    <div class="switchPos selected rounded inlineBlock">Sign-up</div>
+                </div>
+                <form class="starPageForm" action="https://fom.in.ua/echo" method="post">
+                    <h1 class="formTitle">Sign-up</h1>
+                    <div>
+                        <input class="textInput secondaryBG rounded" type="email" name="email" id="email"
+                            placeholder="Enter E-mail" required>
+                    </div>
+                    <div>
+                        <input class="textInput secondaryBG rounded" type="password" name="password" id="password"
+                            placeholder="Password" required>
+                    </div>
+                    <div>
+                        <input class="textInput secondaryBG rounded" type="password" name="password" id="password"
+                            placeholder="Repeat password" required>
+                    </div>
+                    <div class="extraOptions">
+                        <label for="remember" class="label">
+                            <input type="checkbox" class="hiddenCheckbox" name="remember" id="remember" checked>
+                            <span class="checkboxRestyle"></span>Receive news on my email</label>
+                    </div>
+                    <button class="btn bigBtn basicBG rounded" type="submit">Sign-up</button>
+                    <div class="regPrompt">
+                        <span class="basicTextColor">Have an account already?</span>
+                        <a class="underlined" href="index.html">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

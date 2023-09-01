@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <title>Document</title>
+    <title>Log in</title>
 </head>
 
 <body>
@@ -15,21 +15,23 @@
     </header>
 
     <main>
-        <section class="sideBar unselectable">
+        <section class="fR sideBar unselectable">
             <div class="container">
                 <div class="switch rounded">
                     <div class="switchPos selected rounded inlineBlock">Log in</div>
-                    <div class="switchPos rounded inlineBlock"><a href="sign-up_form.html">Sign-up</a></div>
+                    <a href="sign-up.html">
+                        <div class="switchPos rounded inlineBlock">Sign-up</div>
+                    </a>
                 </div>
                 <form class="starPageForm" action="https://fom.in.ua/echo" method="post">
                     <h1 class="formTitle">Log in</h1>
                     <div>
                         <input class="textInput secondaryBG rounded" type="email" name="email" id="email"
-                            placeholder="Enter E-mail">
+                            placeholder="Enter E-mail" required>
                     </div>
                     <div>
                         <input class="textInput secondaryBG rounded" type="password" name="password" id="password"
-                            placeholder="Password">
+                            placeholder="Password" required>
                     </div>
                     <div class="extraOptions">
                         <label for="remember" class="label"><input type="checkbox" class="hiddenCheckbox"
@@ -43,9 +45,9 @@
                     </div>
                     <p class="basicTextColor loginPrompt">Or log in through</p>
                     <div class="socialMedia">
-                        <a href="#"><img src="./images/facebook_logo.svg" alt="facebook"></a>
-                        <a href="#"><img src="./images/instagram_logo.svg" alt="instagram"></a>
-                        <a href="#"><img src="./images/linkedin_logo.svg" alt="linkedin"></a>
+                        <a href="#"><img class="socialLogo" src="./images/facebook_logo.svg" alt="facebook"></a>
+                        <a href="#"><img class="socialLogo" src="./images/instagram_logo.svg" alt="instagram"></a>
+                        <a href="#"><img class="socialLogo" src="./images/linkedin_logo.svg" alt="linkedin"></a>
                     </div>
                 </form>
             </div>
