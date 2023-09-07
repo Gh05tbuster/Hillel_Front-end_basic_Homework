@@ -1,11 +1,10 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --basic-color: #999;
-  --secondary-color: #ccc;
-  --basic-background: #666;
-  --secondary-background: #333;
-  --text-color: #fff;
+  --main_button_color: #ff6336;
+  --main_bg_color: #fff;
+  --start-end_color: #ff9c7d;
+  --text_color: #000;
   --text-size: 16px;
 }
 
@@ -16,7 +15,7 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Graphik";
   font-size: var(--text-size);
   line-height: 1.5;
   font-weight: 400;
@@ -59,3 +58,27 @@ select {
 }
 
 /* ------------------------------------ */
+
+.header {
+}
+
+.section {
+}
+
+.section.basic {
+}
+
+.section.shell {
+}
+
+.section.serviceUse {
+}
+
+.section.review {
+}
+
+.section.rating {
+}
+
+.footer {
+}
