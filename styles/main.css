@@ -60,11 +60,14 @@ select {
 /* ------------------------------------ */
 
 .header {
+  padding: 25px 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.headerContainer {
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  padding: 25px 50px;
 }
 
 .headerNav {
@@ -98,19 +101,25 @@ select {
 }
 
 .section.basic {
+  color: #000;
 }
 
 .section.shell {
+  color: #000;
 }
 
 .section.serviceUse {
+  color: #000;
 }
 
 .section.review {
+  color: #000;
 }
 
 .section.rating {
+  color: #000;
 }
 
 .footer {
+  color: #000;
 }
