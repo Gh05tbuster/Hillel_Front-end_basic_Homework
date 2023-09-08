@@ -83,10 +83,16 @@ select {
 
 .btn {
   border: none;
-  width: 120px;
-  height: 45px;
   cursor: pointer;
   font-weight: 600;
+  padding: 10px;
+  min-width: 160px;
+  min-height: 60px;
+}
+
+.btn.small {
+  min-width: 120px;
+  min-height: 45px;
 }
 
 .btn.main {
@@ -104,11 +110,39 @@ select {
 }
 
 .section.basic {
-  color: #000;
+  background-color: var(--main_bg_color);
+}
+
+.imgBlock {
+  width: 760px;
+  height: 530px;
+  background: url(../images/thematic_image.png), #d3d3d3 100% / cover no-repeat;
 }
 
 .section.shell {
-  color: #000;
+  background-color: var(--start-end_color);
+}
+
+.shell.upper {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.shell.upper .title {
+  width: 50%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
+}
+
+.companyBlock {
+  padding-right: 25px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section.serviceUse {
@@ -125,4 +159,76 @@ select {
 
 .footer {
   color: #000;
+}
+
+.fsz12 {
+  font-size: 12px;
+}
+
+.fsz15 {
+  font-size: 15px;
+}
+
+.fsz18 {
+  font-size: 18px;
+}
+
+.fsz25 {
+  font-size: 25px;
+}
+
+.fsz30 {
+  font-size: 30px;
+}
+
+.fsz35 {
+  font-size: 35px;
+}
+
+.fsz40 {
+  font-size: 40px;
+}
+
+.fsz50 {
+  font-size: 50px;
+}
+
+.fsz65 {
+  font-size: 65px;
+}
+
+.lh100 {
+  line-height: 100%;
+}
+
+.lh110 {
+  line-height: 110%;
+}
+
+.lh115 {
+  line-height: 115%;
+}
+
+.lh120 {
+  line-height: 120%;
+}
+
+.lh125 {
+  line-height: 125%;
+}
+
+.lh135 {
+  line-height: 135%;
+}
+
+.lh140 {
+  line-height: 140%;
+}
+
+.lh150 {
+  line-height: 150%;
+}
+
+.lh165 {
+  line-height: 165%;
 }
