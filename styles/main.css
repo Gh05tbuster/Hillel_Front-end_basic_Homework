@@ -82,12 +82,14 @@ select {
 }
 
 .btn {
-  border: none;
+  border: 1px solid transparent;
+  /* border: none; */
   cursor: pointer;
   font-weight: 600;
   padding: 10px;
   min-width: 160px;
   min-height: 60px;
+  margin: 3px;
 }
 
 .btn.small {
