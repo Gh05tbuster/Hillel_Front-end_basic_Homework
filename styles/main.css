@@ -48,21 +48,53 @@ select {
 }
 
 .container {
-  width: 100%;
+  width: 1290px;
   max-width: calc(var(--container-width) +var(--basic-space) * 2);
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ------------------------------------ */
 
 .header {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 25px 50px;
+}
+
+.headerNav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+.btn {
+  border: none;
+  width: 120px;
+  height: 45px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.main {
+  background-color: var(--main_button_color);
+  color: #fff;
+}
+
+.btn.secondary {
+  border: 1px solid #0008;
+  background-color: transparent;
 }
 
 .section {
+  padding: 50px;
 }
 
 .section.basic {
