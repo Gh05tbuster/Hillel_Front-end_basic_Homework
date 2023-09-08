@@ -83,13 +83,12 @@ select {
 
 .btn {
   border: 1px solid transparent;
-  /* border: none; */
   cursor: pointer;
   font-weight: 600;
   padding: 10px;
   min-width: 160px;
   min-height: 60px;
-  margin: 3px;
+  margin-right: 5px;
 }
 
 .btn.small {
@@ -147,20 +146,52 @@ select {
   align-items: center;
 }
 
+.section.examples {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.exampleCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exampleCard:not(:last-of-type) {
+  margin-bottom: 250px;
+}
+
+.examplePic {
+  width: 50%;
+}
+
+.exampleText {
+  width: 40%;
+}
+
+.exampleText .title {
+  margin-bottom: 30px;
+}
+
+.exampleDesc {
+  margin-bottom: 30px;
+  width: 95%;
+}
+
 .section.serviceUse {
-  color: #000;
+  background-color: #fff8e4;
 }
 
 .section.review {
-  color: #000;
+  background-color: #c9e8f2;
 }
 
 .section.rating {
-  color: #000;
+  background-color: #dabc98;
 }
 
 .footer {
-  color: #000;
+  background-color: #eee;
 }
 
 .fsz12 {
@@ -173,6 +204,10 @@ select {
 
 .fsz18 {
   font-size: 18px;
+}
+
+.fsz20 {
+  font-size: 20px;
 }
 
 .fsz25 {
