@@ -1,12 +1,11 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --basic-color: #999;
-  --secondary-color: #ccc;
-  --basic-background: #666;
-  --secondary-background: #333;
-  --text-color: #fff;
-  --text-size: 16px;
+  --basic-color: #81a36b;
+  --background-color: #d8d8d6;
+  --text-color: #161616;
+  --text-size: 18px;
+  --line-height: 164%;
 }
 
 * {
@@ -18,7 +17,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: var(--text-size);
-  line-height: 1.5;
+  line-height: var(--line-height);
   font-weight: 400;
   color: var(--text-color);
 }
@@ -50,7 +49,7 @@ select {
 
 .container {
   width: 100%;
-  max-width: calc(var(--container-width) +var(--basic-space) * 2);
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--basic-space);
@@ -59,3 +58,58 @@ select {
 }
 
 /* ------------------------------------ */
+
+.header {
+  padding: 20px;
+}
+
+.header .title {
+  font-size: 36px;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.header .list {
+  list-style: none;
+  flex-grow: 2;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.title {
+  font-family: "Vetrino", serif;
+}
+
+.section {
+  background-color: var(--background-color);
+  padding: 50px;
+}
+
+.basicBG,
+.section.basicBG {
+  background-color: var(--basic-color);
+}
+
+.btnGroup {
+}
+
+.btn {
+  cursor: pointer;
+  min-width: 190px;
+  min-height: 60px;
+  border: 1px solid var(--basic-color);
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
+
+.btnBasic {
+  background-color: var(--basic-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
