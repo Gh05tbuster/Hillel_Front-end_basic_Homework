@@ -157,6 +157,10 @@ select {
   align-items: center;
 }
 
+.exampleCard:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
 .exampleCard:not(:last-of-type) {
   margin-bottom: 250px;
 }
