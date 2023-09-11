@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <header class="header basicBG">
+    <header class="header basicBG unselectable">
         <div class="container flexBox">
-            <h3 class="title unselectable">Amelia F</h3>
+            <h3 class="title">Amelia F</h3>
             <ul class="list flexBox">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">How do we work</a></li>
-                <li><a href="#">Our works</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutUs">About us</a></li>
+                <li><a href="#how">How do we work</a></li>
+                <li><a href="#works">Our works</a></li>
+                <li><a href="#footer">Contacts</a></li>
             </ul>
         </div>
     </header>
@@ -26,15 +26,15 @@
     <main>
         <section class="section">
             <div class="container">
-                <div class="flexBox titleCard">
+                <div class="flexBox horizontalCard titleCard">
                     <div>
                         <h1 class="title">Amelia Flowers</h1>
-                        <p>
+                        <p class="cardTxt">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolor aliquid adipisci
                             laboriosam, atque facere omnis! Veniam sequi tenetur officiis, vitae dolores neque
                             reprehenderit fugiat! Sequi non impedit corrupti ut.
                         </p>
-                        <div class="btnGroup flexBox">
+                        <div class="btnGroup">
                             <button class="btn btnBasic">Order bouquet</button>
                             <button class="btn">Florist help</button>
                         </div>
@@ -44,15 +44,18 @@
             </div>
         </section>
 
-        <section class="section">
-            <h2 class="title uppercase">About us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam tenetur voluptatum iste aliquid in
-                voluptatibus libero hic reprehenderit exercitationem, veritatis quo, aperiam cum repudiandae?</p>
+        <section class="section" id="aboutUs">
+            <div class="about">
+                <h2 class="title uppercase">About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam tenetur voluptatum iste
+                    aliquid in
+                    voluptatibus libero hic reprehenderit exercitationem, veritatis quo, aperiam cum repudiandae?</p>
+            </div>
         </section>
 
         <section class="section basicBG">
             <div class="container">
-                <div class="flexBox">
+                <div class="flexBox cardGroup">
                     <div class="card smallCard">
                         <img src="./images/logos/prices.svg" alt="prices">
                         <p>Best prices</p>
@@ -78,9 +81,9 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section pt120" id="how">
             <div class="container">
-                <div class="flexBox">
+                <div class="flexBox horizontalCard">
                     <img src="./images/flowers2.jpg" alt="flowers">
                     <div>
                         <h2 class="title">How do we work</h2>
@@ -94,48 +97,51 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section pb120" id="works">
             <div class="container">
                 <h2 class="title">Our works</h2>
-                <div class="flexBox">
-                    <div class="card bigCard">
+                <div class="flexBox cardGroup">
+                    <div class="card bigCard basicBG">
                         <img src="./images/flowers3.jpg" alt="flowers">
-                        <p>Florence Bouquet</p>
+                        <p>"Florence" Bouquet</p>
                     </div>
-                    <div class="card bigCard">
+                    <div class="card bigCard basicBG">
                         <img src="./images/flowers4.jpg" alt="flowers">
-                        <p>Florence Bouquet</p>
+                        <p>"Florence" Bouquet</p>
                     </div>
-                    <div class="card bigCard">
+                    <div class="card bigCard basicBG">
                         <img src="./images/flowers5.jpg" alt="flowers">
-                        <p>Florence Bouquet</p>
+                        <p>"Florence" Bouquet</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer basicBG">
+    <footer class="footer basicBG" id="footer">
         <div class="container flexBox">
             <div class="contacts">
-                <h4>Contacts</h4>
-                <div>
-                    <p>+380123456789</p>
-                    <p>+380987654321</p>
-                    <p>Kharkiv, Sumska St., 115</p>
+                <h4 class="subtitle">Contacts</h4>
+                <div class="contacts">
+                    <p class="text"><a href="tel:+380123456789">+380123456789</a></p>
+                    <p class="text"><a href="tel:+380987654321">+380987654321</a></p>
+                    <p class="text"> <a target="_blank"
+                            href="https://www.google.ru/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D1%83%D0%BC%D1%81%D1%8C%D0%BA%D0%B0,+115,+%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2,+%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@50.0164384,36.2451345,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0d65c4cbff7:0x807fb14f03deefda!8m2!3d50.0164384!4d36.2477094?entry=ttu">Kharkiv,
+                            Sumska St., 115</a></p>
                 </div>
             </div>
             <h2 class="title">Amelia F</h2>
-            <div>
-                <h4>Our social media</h4>
-                <div>
-                    <img src="./images/logos/instagram_logo.svg" alt="instagram">
-                    <img src="./images/logos/telegram_logo.svg" alt="telegram">
-                    <img src="./images/logos/viber_logo.svg" alt="viber">
+            <div class="socialMedia">
+                <h4 class="subtitle">Our social media</h4>
+                <div class="flexBox logoGroup">
+                    <a href="#"><img src="./images/logos/instagram_logo.svg" alt="instagram"></a>
+                    <a href="#"><img src="./images/logos/telegram_logo.svg" alt="telegram"></a>
+                    <a href="#"><img src="./images/logos/viber_logo.svg" alt="viber"></a>
                 </div>
             </div>
-            <p>© 2023</p>
+
         </div>
+        <p class="copyright">© 2023</p>
     </footer>
 </body>
 

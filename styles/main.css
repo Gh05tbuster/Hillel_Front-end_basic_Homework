@@ -61,17 +61,30 @@ select {
 
 .header {
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .header .title {
   font-size: 36px;
   flex-grow: 1;
   white-space: nowrap;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .header .list {
   list-style: none;
   flex-grow: 2;
+  align-items: center;
+}
+
+.header .list li a {
+  transition: all 0.15s linear;
+}
+
+.header .list li a:hover {
+  color: #eee;
+  /* text-shadow: 0 0 1px #161616; */
 }
 
 .flexBox {
@@ -86,7 +99,11 @@ select {
 
 .section {
   background-color: var(--background-color);
-  padding: 50px;
+  padding-bottom: 120px;
+}
+
+.section.basicBG {
+  padding: 80px 0;
 }
 
 .basicBG,
@@ -94,7 +111,30 @@ select {
   background-color: var(--basic-color);
 }
 
-.btnGroup {
+.horizontalCard {
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-size: 32px;
+  line-height: normal;
+  text-align: center;
+}
+
+.titleCard .title {
+  font-size: 62px;
+  text-align: left;
+}
+
+.cardTxt {
+  margin-bottom: 40px;
+}
+
+.titleCard .btnBasic {
+  margin-right: 65px;
 }
 
 .btn {
@@ -103,13 +143,113 @@ select {
   min-height: 60px;
   border: 1px solid var(--basic-color);
   background-color: transparent;
-  transition: all 0.3s linear;
+  transition: all 0.15s linear;
+}
+
+.btn:hover {
+  background-color: var(--basic-color);
 }
 
 .btnBasic {
   background-color: var(--basic-color);
 }
 
+.btnBasic:hover {
+  background-color: transparent;
+}
+
+.about {
+  max-width: 540px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card.smallCard {
+  line-height: normal;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.smallCard img {
+  max-width: 80px;
+  margin-bottom: 20px;
+}
+
+.cardGroup {
+  flex-wrap: wrap;
+}
+
+.bigCard {
+  padding: 15px 15px 40px 15px;
+}
+
+.bigCard img {
+  margin-bottom: 25px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .title {
+  font-size: 36px;
+}
+
+.footer .subtitle {
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.contacts .text {
+  margin-bottom: 20px;
+}
+
+.contacts a {
+  transition: all 0.15s linear;
+}
+
+.contacts a:hover {
+  color: #eee;
+}
+
+.logoGroup {
+  justify-content: center;
+  gap: 20px;
+}
+
+.logoGroup img {
+  transition: all 0.1s linear;
+}
+
+.logoGroup img:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.pt120 {
+  padding-top: 120px;
+}
+
+.pb120 {
+  padding-bottom: 120px;
 }
