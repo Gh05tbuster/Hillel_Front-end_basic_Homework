@@ -223,11 +223,13 @@ select {
 
 .logoGroup {
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
 .logoGroup img {
   transition: all 0.1s linear;
+  width: 24px;
 }
 
 .logoGroup img:hover {
