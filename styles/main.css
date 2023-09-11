@@ -229,7 +229,7 @@ select {
 
 .logoGroup img {
   transition: all 0.1s linear;
-  width: 24px;
+  height: 24px;
 }
 
 .logoGroup img:hover {
