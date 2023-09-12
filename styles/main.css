@@ -230,6 +230,7 @@ select {
 .serviceUse .cardBox {
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 30px;
 }
 
 .cardBox {
@@ -300,6 +301,27 @@ select {
 
 .section.review {
   background-color: #c9e8f2;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.reviewCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 60px;
+}
+
+.review .text {
+  font-size: 30px;
+  line-height: 135%;
+  margin-bottom: 20px;
+}
+
+.review .by-line {
+  font-size: 15px;
+  line-height: 165%;
+  margin-bottom: 5px;
 }
 
 .section.rating {
