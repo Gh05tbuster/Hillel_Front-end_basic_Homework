@@ -5,7 +5,7 @@
   --main_bg_color: #fff;
   --start-end_color: #ff9c7d;
   --text_color: #000;
-  --text-size: 16px;
+  --text-size: 20px;
 }
 
 * {
@@ -49,7 +49,7 @@ select {
 
 .container {
   width: 100%;
-  max-width: calc(var(--container-width) +var(--basic-space) * 2);
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -60,25 +60,41 @@ select {
 /* ------------------------------------ */
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 50px;
   border-bottom: 1px solid #ccc;
+  font-size: 15px;
 }
 
 .headerContainer {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1440px;
+  max-width: 1340px;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .headerNav {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  flex-grow: 4;
+  gap: 50px;
   align-items: center;
-  width: 55%;
+}
+
+.logo {
+  min-width: 90px;
+}
+
+.btnGroup {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.header .btnGroup {
+  justify-content: end;
 }
 
 .btn {
@@ -88,7 +104,7 @@ select {
   padding: 10px;
   min-width: 160px;
   min-height: 60px;
-  margin-right: 5px;
+  font-size: 16px;
 }
 
 .btn.small {
@@ -107,17 +123,47 @@ select {
 }
 
 .section {
-  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .section.basic {
   background-color: var(--main_bg_color);
 }
 
+.section .title {
+  font-size: 50px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.section .big.title {
+  font-size: 65px;
+  line-height: 115%;
+  margin-bottom: 50px;
+}
+
+.infoBlock {
+  width: 45%;
+  min-width: 600px;
+  z-index: 2;
+}
+
+.infoBlock .text {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.infoBlock .btnGroup {
+  margin-bottom: 25px;
+}
+
 .imgBlock {
   width: 760px;
   height: 530px;
-  background: url(../images/thematic_image.png), #d3d3d3 100% / cover no-repeat;
+  background: url(../images/thematic_image.png);
+  position: absolute;
+  right: 0%;
 }
 
 .section.shell {
@@ -146,11 +192,6 @@ select {
   align-items: center;
 }
 
-.section.examples {
-  margin-top: 100px;
-  margin-bottom: 150px;
-}
-
 .exampleCard {
   display: flex;
   justify-content: space-between;
@@ -173,10 +214,6 @@ select {
   width: 40%;
 }
 
-.exampleText .title {
-  margin-bottom: 30px;
-}
-
 .exampleDesc {
   margin-bottom: 30px;
   width: 95%;
@@ -184,6 +221,81 @@ select {
 
 .section.serviceUse {
   background-color: #fff8e4;
+}
+
+.serviceUse .title:first-of-type {
+  text-align: center;
+}
+
+.serviceUse .cardBox {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  width: 25%;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.serviceUse .card img {
+  width: 160px;
+  height: 120px;
+}
+
+.serviceUse .card .title {
+  font-size: 25px;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.serviceUse .card .text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: underline;
+}
+
+.potentialUsers .cardBox {
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.potentialUsers .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 30%;
+  gap: 0;
+}
+
+.potentialUsers .card .title {
+  font-size: 30px;
+  line-height: 135%;
+}
+
+.potentialUsers .card img {
+  margin-bottom: 50px;
+}
+
+.potentialUsers .card .text {
+  margin-bottom: 25px;
 }
 
 .section.review {
