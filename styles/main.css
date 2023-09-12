@@ -125,6 +125,8 @@ select {
 .section {
   padding-top: 100px;
   padding-bottom: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section.basic {
@@ -143,15 +145,22 @@ select {
   margin-bottom: 50px;
 }
 
+.titleSection .text {
+  font-size: 25px;
+  line-height: 140%;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
 .infoBlock {
   width: 45%;
   min-width: 600px;
   z-index: 2;
 }
 
-.infoBlock .text {
-  width: 80%;
-  margin-bottom: 50px;
+.infoBlock .subtext {
+  font-size: 15px;
+  line-height: 165%;
 }
 
 .infoBlock .btnGroup {
@@ -177,6 +186,8 @@ select {
 
 .shell.upper .title {
   width: 50%;
+  font-size: 50px;
+  line-height: 120%;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -210,11 +221,11 @@ select {
   width: 50%;
 }
 
-.exampleText {
+.exampleInfo {
   width: 40%;
 }
 
-.exampleDesc {
+.examples .text {
   margin-bottom: 30px;
   width: 95%;
 }
@@ -303,12 +314,15 @@ select {
   background-color: #c9e8f2;
   padding-top: 60px;
   padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .reviewCard {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: nowrap;
   gap: 60px;
 }
 
@@ -330,80 +344,4 @@ select {
 
 .footer {
   background-color: #eee;
-}
-
-.fsz12 {
-  font-size: 12px;
-}
-
-.fsz15 {
-  font-size: 15px;
-}
-
-.fsz18 {
-  font-size: 18px;
-}
-
-.fsz20 {
-  font-size: 20px;
-}
-
-.fsz25 {
-  font-size: 25px;
-}
-
-.fsz30 {
-  font-size: 30px;
-}
-
-.fsz35 {
-  font-size: 35px;
-}
-
-.fsz40 {
-  font-size: 40px;
-}
-
-.fsz50 {
-  font-size: 50px;
-}
-
-.fsz65 {
-  font-size: 65px;
-}
-
-.lh100 {
-  line-height: 100%;
-}
-
-.lh110 {
-  line-height: 110%;
-}
-
-.lh115 {
-  line-height: 115%;
-}
-
-.lh120 {
-  line-height: 120%;
-}
-
-.lh125 {
-  line-height: 125%;
-}
-
-.lh135 {
-  line-height: 135%;
-}
-
-.lh140 {
-  line-height: 140%;
-}
-
-.lh150 {
-  line-height: 150%;
-}
-
-.lh165 {
-  line-height: 165%;
 }
