@@ -7,9 +7,6 @@
   --secondary-background: #f7f9fa;
   --text-color: #1d2f38;
   --text-size: 16px;
-
-  /* #d8d8d8 */
-  /* #536d7a */
 }
 
 * {
@@ -64,6 +61,7 @@ select {
 }
 
 .section {
+  padding: 60px 10px 100px 10px;
 }
 
 .container {
@@ -80,4 +78,37 @@ select {
   display: flex;
 }
 
-/* ------------------------------------ */
+/* ---------------HEADER--------------------- */
+.header {
+  background-color: var(--main-background);
+  border-bottom: 1px solid #d8d8d8;
+  box-shadow: 0 0 3px 0 #d8d8d8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header .flex {
+  justify-content: space-between;
+}
+
+.nav {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nav .flex,
+.nav + .flex {
+  align-items: center;
+  gap: 5px;
+}
+
+.nav .flex img {
+  width: 20px;
+}
+
+/* ----------------MAIN-------------------- */
+
+/* ----------------FOOTER--------------------- */
+
+/* #536d7a */
