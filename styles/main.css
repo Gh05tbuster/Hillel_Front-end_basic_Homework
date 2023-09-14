@@ -1,12 +1,15 @@
 :root {
-  --container-width: 1110px;
+  --container-width: 1150px;
   --basic-space: 1rem;
-  --basic-color: #999;
-  --secondary-color: #ccc;
-  --basic-background: #666;
-  --secondary-background: #333;
-  --text-color: #000;
+  --basic-color: #17a550;
+  --secondary-color: #fff;
+  --main-background: #fff;
+  --secondary-background: #f7f9fa;
+  --text-color: #1d2f38;
   --text-size: 16px;
+
+  /* #d8d8d8 */
+  /* #536d7a */
 }
 
 * {
@@ -16,9 +19,9 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: var(--text-size);
-  line-height: 1.5;
+  line-height: 1.33;
   font-weight: 400;
   color: var(--text-color);
 }
@@ -44,8 +47,23 @@ select {
   display: none !important;
 }
 
+.flex {
+  display: flex;
+}
+
 .unselectable {
   user-select: none;
+}
+
+.basic {
+  color: var(--basic-color);
+}
+
+.basicBG {
+  background-color: var(--basic-color);
+}
+
+.section {
 }
 
 .container {
@@ -56,6 +74,10 @@ select {
   padding-left: var(--basic-space);
   padding-right: var(--basic-space);
   position: relative;
+}
+
+.card {
+  display: flex;
 }
 
 /* ------------------------------------ */
