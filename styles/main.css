@@ -81,13 +81,13 @@ select {
   position: relative;
 }
 
-.container.filled {
+.container .filled {
   background-color: var(--container-background);
   padding: 50px;
   border-radius: 10px;
 }
 
-.container.filled.bg {
+.container .filled.bg {
   background-image: url(../images/background.svg);
 }
 
@@ -166,7 +166,6 @@ select {
 /*------------- TITLE CARD-----------------  */
 .titleCard {
   gap: 50px;
-  margin-bottom: 75px;
 }
 
 .mainTitle {
@@ -232,7 +231,7 @@ select {
 }
 
 /* ---------------PRODUCTS----------------------*/
-.container.bestProducts {
+.bestProducts {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
@@ -263,6 +262,7 @@ select {
 .latestProducts .cardBox .card {
   background-color: var(--secondary-background);
   border-radius: 7px;
+  position: relative;
 }
 
 .latestProducts .cardBox .card img {
@@ -284,6 +284,19 @@ select {
 .latestProducts .cardBox .card .text {
   font-size: 15px;
   line-height: 20px;
+}
+
+.latestProducts .caption {
+  border-radius: 3px;
+  padding: 5px 10px;
+  height: 30px;
+  background-color: rgba(29, 47, 56, 0.8);
+  color: #fffc;
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 /* --------------NEWSLETTER-------------------- */
