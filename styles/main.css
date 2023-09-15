@@ -5,6 +5,7 @@
   --secondary-color: #fff;
   --main-background: #fff;
   --secondary-background: #f7f9fa;
+  --container-background: #e3ebf1;
   --text-color: #1d2f38;
   --text-size: 16px;
 }
@@ -74,15 +75,44 @@ select {
   position: relative;
 }
 
+.container.filled {
+  background-color: var(--container-background);
+  padding: 50px;
+  border-radius: 10px;
+}
+
 .card {
   display: flex;
+  flex-direction: column;
+}
+
+.horizontal.card {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  min-height: 50px;
+  min-width: 80px;
+  padding: 15px;
+}
+
+.btn.basicBG {
+  color: var(--secondary-color);
 }
 
 /* ---------------HEADER--------------------- */
 .header {
   background-color: var(--main-background);
   border-bottom: 1px solid #d8d8d8;
-  box-shadow: 0 0 3px 0 #d8d8d8;
+  box-shadow: 0 1px 8px 0 rgba(83, 109, 122, 0.29);
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -108,6 +138,23 @@ select {
 }
 
 /* ----------------MAIN-------------------- */
+
+.titleCard {
+  gap: 50px;
+  margin-bottom: 75px;
+}
+
+.mainTitle {
+  font-size: 47px;
+  line-height: 52px;
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
+.titleCard .text {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
 
 /* ----------------FOOTER--------------------- */
 
