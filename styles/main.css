@@ -49,6 +49,10 @@ select {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .unselectable {
   user-select: none;
 }
@@ -84,6 +88,7 @@ select {
 .card {
   display: flex;
   flex-direction: column;
+  border-radius: 7px;
 }
 
 .horizontal.card {
@@ -106,6 +111,14 @@ select {
 
 .btn.basicBG {
   color: var(--secondary-color);
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap40 {
+  gap: 40px;
 }
 
 /* ---------------HEADER--------------------- */
@@ -154,6 +167,60 @@ select {
 .titleCard .text {
   font-size: 18px;
   margin-bottom: 25px;
+}
+
+.newsBlock > .title {
+  font-size: 38px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.news {
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 75px;
+}
+
+.news .card img {
+  border-radius: 7px;
+}
+
+.news .card.big {
+  max-width: 555px;
+}
+
+.news .card.big img {
+  width: 100%;
+  aspect-ratio: 1.4;
+  margin-bottom: 9px;
+  object-fit: cover;
+}
+
+.news .card .title {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 13px;
+}
+
+.news .big.card .text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.news .small.card {
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.news .small.card img {
+  max-width: 245px;
+  aspect-ratio: 1.6;
+}
+
+.arrowLink {
+  gap: 5px;
+  align-self: flex-start;
 }
 
 /* ----------------FOOTER--------------------- */
