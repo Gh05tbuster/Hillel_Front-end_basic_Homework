@@ -286,6 +286,60 @@ select {
   line-height: 20px;
 }
 
+/* --------------NEWSLETTER-------------------- */
+.newsLetter {
+  gap: 100px;
+}
+
+.newsLetter .whiteCircle {
+  background-color: #fff;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.newsLetter .cardInfo .headline {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.newsLetter .cardInfo .title {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.newsLetter .cardInfo .text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.newsLetter .cardInfo .emailInput {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #aabcc5;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.newsLetter .submit {
+  background-color: #ffc728;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.newsLetter .submit ~ .text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #536d7a;
+}
+
 /* ----------------FOOTER--------------------- */
 
 /* #536d7a */
