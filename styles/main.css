@@ -66,7 +66,9 @@ select {
 }
 
 .section {
-  padding: 60px 10px 100px 10px;
+  padding-bottom: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .container {
@@ -83,6 +85,10 @@ select {
   background-color: var(--container-background);
   padding: 50px;
   border-radius: 10px;
+}
+
+.container.filled.bg {
+  background-image: url(../images/background.svg);
 }
 
 .card {
@@ -104,7 +110,7 @@ select {
 .btn {
   border-radius: 5px;
   border: 1px solid transparent;
-  min-height: 50px;
+  max-height: 50px;
   min-width: 80px;
   padding: 15px;
 }
@@ -128,6 +134,7 @@ select {
   box-shadow: 0 1px 8px 0 rgba(83, 109, 122, 0.29);
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 60px;
 }
 
 .header .flex {
@@ -150,8 +157,13 @@ select {
   width: 20px;
 }
 
-/* ----------------MAIN-------------------- */
+.arrowLink {
+  gap: 5px;
+  align-self: flex-start;
+}
 
+/* ----------------MAIN-------------------- */
+/*------------- TITLE CARD-----------------  */
 .titleCard {
   gap: 50px;
   margin-bottom: 75px;
@@ -169,6 +181,7 @@ select {
   margin-bottom: 25px;
 }
 
+/* ------------------NEWS--------------------- */
 .newsBlock > .title {
   font-size: 38px;
   line-height: 40px;
@@ -218,9 +231,59 @@ select {
   aspect-ratio: 1.6;
 }
 
-.arrowLink {
-  gap: 5px;
-  align-self: flex-start;
+/* ---------------PRODUCTS----------------------*/
+.container.bestProducts {
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.bestProducts .flex {
+  align-items: center;
+  gap: 12px;
+}
+
+.bestProducts .title {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.latestProducts > .title {
+  font-size: 38px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.latestProducts .cardBox {
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.latestProducts .cardBox .card {
+  background-color: var(--secondary-background);
+  border-radius: 7px;
+}
+
+.latestProducts .cardBox .card img {
+  border-radius: 7px 7px 0 0;
+  aspect-ratio: 1.8;
+  object-fit: cover;
+}
+
+.latestProducts .cardBox .card .cardInfo {
+  padding: 25px 25px 40px 25px;
+}
+
+.latestProducts .cardBox .card .title {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 13px;
+}
+
+.latestProducts .cardBox .card .text {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 /* ----------------FOOTER--------------------- */
