@@ -503,11 +503,11 @@ select {
   align-items: start;
 }
 
-.footerContent .linkbox a {
+.footerContent .linkBox a {
   transition: all 0.1s linear;
 }
 
-.footerContent .linkbox a:hover {
+.footerContent .linkBox a:hover {
   color: var(--basic-color);
 }
 
