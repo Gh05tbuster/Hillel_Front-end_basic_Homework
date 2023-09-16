@@ -2,6 +2,7 @@
   --container-width: 1150px;
   --basic-space: 1rem;
   --basic-color: #17a550;
+  --basic-color-hover: #2fc069;
   --secondary-color: #fff;
   --main-background: #fff;
   --secondary-background: #f7f9fa;
@@ -95,6 +96,11 @@ select {
   display: flex;
   flex-direction: column;
   border-radius: 7px;
+  transition: all 0.1s linear;
+}
+
+.active.card:hover {
+  box-shadow: 0 0 10px 1px #0007;
 }
 
 .horizontal.card {
@@ -114,18 +120,29 @@ select {
   max-height: 50px;
   min-width: 80px;
   padding: 15px;
+  transition: all 0.1s linear;
 }
 
 .btn.basicBG {
   color: var(--secondary-color);
 }
 
-.gap20 {
-  gap: 20px;
+.btn.basicBG:hover {
+  background-color: var(--basic-color-hover);
 }
 
-.gap40 {
-  gap: 40px;
+.arrowLink {
+  gap: 5px;
+  align-self: flex-start;
+  transition: all 0.1s linear;
+}
+
+.arrowLink:hover {
+  color: var(--basic-color);
+}
+
+.gap20 {
+  gap: 20px;
 }
 
 /* ---------------HEADER--------------------- */
@@ -142,25 +159,26 @@ select {
   justify-content: space-between;
 }
 
-.nav {
+.header .nav {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
 }
 
-.nav .flex,
-.nav + .flex {
+.header .nav > .flex,
+.header .nav + .flex {
   align-items: center;
   gap: 5px;
+  transition: all 0.1s linear;
+}
+
+.header .nav > .flex:hover,
+.header .nav + .flex:hover {
+  color: var(--basic-color);
 }
 
 .nav .flex img {
   width: 20px;
-}
-
-.arrowLink {
-  gap: 5px;
-  align-self: flex-start;
 }
 
 /* ----------------MAIN-------------------- */
@@ -181,6 +199,10 @@ select {
   margin-bottom: 25px;
 }
 
+.titleCard .btn {
+  display: inline-block;
+}
+
 /* ------------------NEWS--------------------- */
 .newsBlock > .title {
   font-size: 38px;
@@ -192,6 +214,10 @@ select {
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 75px;
+}
+
+.news .cardBox {
+  gap: 20px;
 }
 
 .news .card img {
@@ -297,6 +323,12 @@ select {
   position: absolute;
   top: 15px;
   left: 15px;
+  transition: all 0.1s linear;
+}
+
+.latestProducts .caption:hover {
+  background-color: rgb(29, 47, 56);
+  color: #fff;
 }
 
 /* --------------NEWSLETTER-------------------- */
@@ -347,10 +379,19 @@ select {
   margin-right: 10px;
 }
 
+.newsLetter .submit:hover {
+  cursor: pointer;
+  background-color: #ffbb01;
+}
+
 .newsLetter .submit ~ .text {
   font-size: 12px;
   line-height: 20px;
   color: #536d7a;
+}
+
+.newsLetter .submit ~ .text:hover {
+  text-shadow: 0 0 5px #000;
 }
 
 /* ----------------FOOTER--------------------- */
@@ -370,6 +411,7 @@ select {
   width: 30%;
 }
 
+/* ---------------LEFT SIDE--------------- */
 .footerContent .left.block .logo {
   width: 50%;
   margin-bottom: 20px;
@@ -383,12 +425,18 @@ select {
 
 .footerContent .iconBox img {
   width: 25px;
+  transition: all 0.1s linear;
+}
+
+.footerContent .iconBox img:hover {
+  transform: scale(1.2);
 }
 
 .footerContent .left.block .text {
   width: 90%;
 }
 
+/* ------------------MIDDLE------------------ */
 .footerContent .middle.block {
   flex-direction: column;
   gap: 20px;
@@ -412,6 +460,7 @@ select {
   object-fit: cover;
 }
 
+/* ---------------RIGHT SIDE--------------- */
 .footerContent .searchForm {
   flex-wrap: wrap;
   row-gap: 13px;
@@ -439,12 +488,27 @@ select {
   font-size: 12px;
   line-height: 20px;
   font-weight: 700;
+  transition: all 0.1s linear;
+}
+
+.footerContent .searchForm .submit:hover {
+  cursor: pointer;
+  background-color: #9bb2be;
 }
 
 .footerContent .linkBox {
   gap: 7px;
   line-height: 20px;
   margin-bottom: 25px;
+  align-items: start;
+}
+
+.footerContent .linkbox a {
+  transition: all 0.1s linear;
+}
+
+.footerContent .linkbox a:hover {
+  color: var(--basic-color);
 }
 
 .footerContent .copyright {
@@ -462,4 +526,12 @@ select {
 
 .footer .underfooter .linkBox {
   gap: 10px;
+}
+
+.footer .underfooter .linkBox a {
+  transition: all 0.1s linear;
+}
+
+.footer .underfooter .linkBox a:hover {
+  color: var(--basic-color);
 }
