@@ -14,7 +14,7 @@
         <div class="container">
             <div class="flex">
                 <nav class="nav flex">
-                    <a href="index.html"><img src="./images/affiliate.svg" alt="affiliate logo"></a>
+                    <a href="index.html"><img src="./images/affiliate.svg" alt="affiliate logo" class="logo"></a>
                     <a href="#" class="flex">
                         <img src="./images/icons/pages.svg" alt="pages">
                         <span>Pages</span>
@@ -178,61 +178,65 @@
     </main>
 
     <footer class="footer">
-        <div class="container flex">
-            <div>
-                <img src="./images/affiliate.svg" alt="affiliate">
-                <div class="iconBox">
-                    <a href="#"><img src="./images/icons/facebook_logo.svg" alt="facebook"></a>
-                    <a href="#"><img src="./images/icons/x_logo.svg" alt="x.com"></a>
-                    <a href="#"><img src="./images/icons/instagram_logo.svg" alt="instagram"></a>
+        <div class="container">
+            <div class="flex footerContent">
+                <div class="left block">
+                    <img src="./images/affiliate.svg" alt="affiliate" class="logo">
+                    <div class="iconBox flex">
+                        <a href="#"><img src="./images/icons/facebook_logo.svg" alt="facebook"></a>
+                        <a href="#"><img src="./images/icons/x_logo.svg" alt="x.com"></a>
+                        <a href="#"><img src="./images/icons/instagram_logo.svg" alt="instagram"></a>
+                    </div>
+                    <p class="text">
+                        <b>Affiliate</b>is a Webflow template made for entrepreneurs who want a professional and
+                        polished
+                        site ready to start and grow their affiliate marketing business in any niche.
+                    </p>
                 </div>
-                <p class="text">
-                    <b>Affiliate</b>is a Webflow template made for entrepreneurs who want a professional and polished
-                    site ready to start and grow their affiliate marketing business in any niche.
+                <div class="flex middle block">
+                    <h3 class="title">Latest Articles</h3>
+                    <a href="#" class="horizontal card">
+                        <img src="./images/lawn.jpg" alt="lawn">
+                        <p class="text">How to Prep Your Lawn in the Spring</p>
+                    </a>
+                    <a href="#" class="horizontal card">
+                        <img src="./images/hedge.jpg" alt="hedge">
+                        <p class="text">Secrets to Know About Hedge Trimming</p>
+                    </a>
+                    <a href="#" class="horizontal card">
+                        <img src="./images/tree.jpg" alt="tree">
+                        <p class="text">What to Do With a Dying Tree</p>
+                    </a>
+                </div>
+                <div class="right block">
+                    <form action="" class="searchForm flex">
+                        <h3 class="title">Browse</h3>
+                        <input type="search" class="search">
+                        <button type="submit" class="btn submit">Search</button>
+                    </form>
+                    <div class="linkBox flex column">
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Categories</a></p>
+                        <p><a href="#">Tools</a></p>
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Affiliate Disclosure</a></p>
+                    </div>
+                    <p class="copyright">©2022 Your Brand Name</p>
+                </div>
+            </div>
+
+            <div class="container flex underfooter">
+                <div class="flex linkBox">
+                    <a href="#">Style Guide</a>
+                    <a href="#">Licenses</a>
+                    <a href="#">Changelog</a>
+                </div>
+
+                <p>
+                    Powered by Webflow . Designed by Kevin Barrett
                 </p>
             </div>
-            <div class="flex">
-                <h3 class="title">Latest Articles</h3>
-                <a href="#" class="horizontal card">
-                    <img src="./images/lawn.jpg" alt="lawn">
-                    <p></p>
-                </a>
-                <a href="#" class="horizontal card">
-                    <img src="./images/hedge.jpg" alt="hedge">
-                    <p></p>
-                </a>
-                <a href="#" class="horizontal card">
-                    <img src="./images/tree.jpg" alt="tree">
-                    <p></p>
-                </a>
-            </div>
-            <div class="flex">
-                <form action="">
-                    <h3 class="title">Browse</h3>
-                    <input type="search">
-                    <button type="submit" class="btn searchBtn">Search</button>
-                </form>
-
-                <a>About</a>
-                <a>Categories</a>
-                <a>Tools</a>
-                <a>Contact</a>
-                <a>Privacy Policy</a>
-                <a>Affiliate Disclosure</a>
-                <p class="copyright">©2022 Your Brand Name</p>
-            </div>
-        </div>
-
-        <div class="container flex underfooter">
-            <div class="flex">
-                <a href="#">Style Guide</a>
-                <a href="#">Licenses</a>
-                <a href="#">Changelog</a>
-            </div>
-
-            <p>
-                Powered by Webflow . Designed by Kevin Barrett
-            </p>
         </div>
     </footer>
 </body>

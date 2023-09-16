@@ -100,6 +100,7 @@ select {
 .horizontal.card {
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -220,7 +221,6 @@ select {
 }
 
 .news .small.card {
-  align-items: center;
   justify-content: start;
   gap: 15px;
 }
@@ -354,5 +354,112 @@ select {
 }
 
 /* ----------------FOOTER--------------------- */
+.footer {
+  background-color: var(--secondary-background);
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 
-/* #536d7a */
+.footerContent {
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footerContent .block {
+  width: 30%;
+}
+
+.footerContent .left.block .logo {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.footerContent .iconBox {
+  justify-content: start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.footerContent .iconBox img {
+  width: 25px;
+}
+
+.footerContent .left.block .text {
+  width: 90%;
+}
+
+.footerContent .middle.block {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerContent .title {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.footerContent .middle.block .card {
+  justify-content: start;
+  gap: 10px;
+  line-height: 18px;
+}
+
+.footerContent .middle.block .card img {
+  border-radius: 7px;
+  max-width: 140px;
+  aspect-ratio: 1.4;
+  object-fit: cover;
+}
+
+.footerContent .searchForm {
+  flex-wrap: wrap;
+  row-gap: 13px;
+  margin-bottom: 20px;
+}
+
+.footerContent .searchForm .title {
+  width: 100%;
+}
+
+.footerContent .searchForm .search {
+  flex-grow: 1;
+  background-color: #fff;
+  border: 1px solid #aabcc5;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.footerContent .searchForm .submit {
+  background-color: #768f9c;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.footerContent .linkBox {
+  gap: 7px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.footerContent .copyright {
+  padding-top: 20px;
+  border-top: 1px solid #536d7a;
+}
+
+.footer .underfooter {
+  padding-top: 22px;
+  border-top: 1px solid #536d7a;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.footer .underfooter .linkBox {
+  gap: 10px;
+}
