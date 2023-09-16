@@ -231,7 +231,7 @@ select {
 }
 
 /* ---------------PRODUCTS----------------------*/
-.bestProducts {
+.container .bestProducts {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
