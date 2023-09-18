@@ -84,8 +84,13 @@ select {
   align-items: center;
 }
 
-.logo {
+.headerNav .logo {
   min-width: 90px;
+  transition: all 0.1s linear;
+}
+
+.headerNav .logo:hover {
+  transform: scale(1.1);
 }
 
 .btnGroup {
