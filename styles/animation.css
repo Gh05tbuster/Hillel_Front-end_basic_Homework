@@ -1,0 +1,152 @@
+.container {
+  animation: light linear 15s infinite;
+}
+
+@keyframes light {
+  0% {
+    filter: brightness(0);
+  }
+
+  15% {
+    filter: brightness(1);
+  }
+
+  65% {
+    filter: brightness(1);
+  }
+  80% {
+    filter: brightness(0);
+  }
+  100% {
+    filter: brightness(0);
+  }
+}
+
+.cloud_1 {
+  animation: cloud_1_motion linear 12s infinite;
+}
+
+@keyframes cloud_1_motion {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cloud_2 {
+  animation: cloud_1_motion linear 7s infinite;
+}
+
+@keyframes cloud_1_motion {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cloud_3 {
+  animation: cloud_1_motion linear 10s infinite;
+}
+
+@keyframes cloud_1_motion {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.sun {
+  animation: cycle 15s linear infinite;
+}
+
+@keyframes cycle {
+  0% {
+    transform: translate(-100%, 25vh);
+    opacity: 1;
+  }
+  5% {
+    transform: translate(5vw, 22vh);
+  }
+  10% {
+    transform: translate(10vw, 19vh);
+  }
+  15% {
+    transform: translate(15vw, 16vh);
+  }
+  20% {
+    transform: translate(20vw, 13vh);
+  }
+  25% {
+    transform: translate(25vw, 10vh);
+  }
+  30% {
+    transform: translate(30vw, 7vh);
+  }
+  35% {
+    transform: translate(35vw, 4vh);
+  }
+  40% {
+    transform: translate(40vw, 1vh);
+  }
+  45% {
+    transform: translate(45vw, 4vh);
+  }
+  50% {
+    transform: translate(50vw, 7vh);
+  }
+  55% {
+    transform: translate(55vw, 10vh);
+  }
+  60% {
+    transform: translate(60vw, 13vh);
+  }
+  65% {
+    transform: translate(65vw, 16vh);
+  }
+  70% {
+    transform: translate(70vw, 19vh);
+  }
+  75% {
+    transform: translate(80vw, 22vh);
+  }
+  80% {
+    transform: translate(85vw, 25vh);
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+}
